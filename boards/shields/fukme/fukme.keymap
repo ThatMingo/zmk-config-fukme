@@ -1,0 +1,31 @@
+#include <dt-bindings/zmk/keys.h>
+#include <behaviors.dtsi>
+
+#define DEFAULT 0
+#define LOWER   1
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        DEFAULT { // Layer 0
+            // ------------------------
+            // |     F     |     X     |
+            bindings = <
+                &kp F   &lt LOWER X  
+               
+            >;
+        };
+
+        LOWER { // Layer 1
+            // ------------------------
+            // |     studio_unlock     |     none     |
+            bindings = <
+                &studio_unlock    &trans  
+               
+            >;
+        };
+    
+
+    };
+ };

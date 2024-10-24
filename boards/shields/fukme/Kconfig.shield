@@ -1,0 +1,3 @@
+# No whitespace after the comma or in your keyboard name!
+config SHILED_FUKME
+    def_bool $(shields_list_contains,fukme)
